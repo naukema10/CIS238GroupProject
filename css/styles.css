@@ -1,0 +1,266 @@
+/*
+Nathaniel Aukema, Chloe Vo, Gilberto Vazquez, Abigail Flynn
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #fff8e7;
+    color: #2b1d0e;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule for header */
+header {
+    background-color: #b22222;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.75em;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style rules for nav area */
+nav {
+    background-color: #2b1d0e;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.15em;
+    border-top: 1px solid #fff8e7;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    color: #fff8e7;
+    padding: 0.75em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content  */
+main {
+    padding: 4%;
+}
+
+main h2 {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    color: #b22222;
+    text-align: center;
+    margin: 0.75em 0 0.5em 0;
+}
+
+main h3 {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.25em;
+    color: #b22222;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+main p {
+    margin-bottom: 1em;
+}
+
+/*  Hero area  */
+#hero img {
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Menu button */
+.menu-link {
+    text-align: center;
+}
+
+.menu-link a {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.75em;
+    background-color: #f4b41a;
+    color: #2b1d0e;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hours area */
+#hours {
+    background-color: #fff;
+    border-top: 3px solid #b22222;
+    border-bottom: 3px solid #b22222;
+    padding: 4%;
+    margin: 1.5em 0 0 0;
+}
+
+.hours {
+    list-style-type: none;
+    text-align: center;
+}
+
+.hours li {
+    padding: 0.4em 0;
+}
+
+/* Style rules for footer content */
+footer {
+    background-color: #2b1d0e;
+    color: #fff8e7;
+    padding: 4%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #fff8e7;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+footer li {
+    padding: 0.4em 0;
+}
+
+.contact-info {
+    margin-bottom: 1em;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+    /* Tablet Viewport: Style rules for header */
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        display: inline-block;
+        border-top: none;
+        border-right: 1px solid #fff8e7;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    /* Tablet Viewport: Style rules for main content */
+    main {
+        padding: 3% 5%;
+    }
+
+    .menu-link a {
+        width: 50%;
+    }
+
+    /* Tablet Viewport: style rules for footer */
+    footer li {
+        display: inline-block;
+        padding: 0 0.75em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li a {
+        padding: 0.75em 1.5em;
+    }
+
+
+    nav li a:hover {
+        color: #2b1d0e;
+        background-color: #f4b41a;
+    }
+
+    /* Desktop Viewport - Style rules for main content */
+    #hero {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #hours {
+        max-width: 500px;
+        margin: 1.5em auto 0 auto;
+    }
+
+    .menu-link a {
+        width: 300px;
+    }
+
+
+    .menu-link a:hover {
+        background-color: #b22222;
+        color: #fff;
+    }
+
+    /* Desktop Viewport: style rules for footer */
+    footer a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
